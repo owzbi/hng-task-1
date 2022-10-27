@@ -14,11 +14,11 @@ function App() {
         <img src={MyImage} alt="Imag of Myself" id="profile__img" />
         <h2>Segun Owolabi</h2>
        <div id="socials">
-       <a id="twitter" href="https://twitter.com/owzbi" target={"_blank"}>
+       <a id="twitter" href="https://twitter.com/owzbi" target={"_blank"} rel="noreferrer">
           <img src={twitter}
            alt="twitter logo" />
         </a>
-        <a id="slack" href="https://slack.com/owzbi" target={"_blank"}> <img src={slack}
+        <a id="slack" href="https://slack.com/owzbi" target={"_blank"} rel="noreferrer"> <img src={slack}
            alt="twitter logo" /></a>
        </div>
       </div>
