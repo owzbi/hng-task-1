@@ -2,6 +2,9 @@ import Button from "./ButtonComp";
 import MyImage from "./MyImage.jpg";
 import I4G from "./I4G (1).png"
 import zuriLogo from "./logo.36d2d48a.png"
+import twitter from "./twitter.png"
+import slack from "./slack.png"
+
 
 
 function App() {
@@ -10,17 +13,22 @@ function App() {
       <div className="image-div">
         <img src={MyImage} alt="Imag of Myself" id="profile__img" />
         <h2>Segun Owolabi</h2>
-        <p id="twitter">owzbi</p>
-        <p id="slack">owzbi</p>
+       <div id="socials">
+       <a id="twitter" href="https://twitter.com/owzbi" target={"_blank"}>
+          <img src={twitter}
+           alt="twitter logo" />
+           owzbi
+        </a>
+        <a id="slack" href="https://slack.com/owzbi" target={"_blank"}> <img src={slack}
+           alt="twitter logo" /></a>
+       </div>
       </div>
 
-      <Button link={"https://twitter.com/owzbi"}>Twitter Link</Button>
-
-      <Button link={"http://training.zuri.team"} identify="btn__zuri">
+      <Button link={"https://training.zuri.team"} identify="btn__zuri">
         Zuri Team
       </Button>
 
-      <Button link={"http://books.zuri.team"} identify="books">
+      <Button link={"https://books.zuri.team"} identify="books">
         Zuri Books
       </Button>
 

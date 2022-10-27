@@ -4,11 +4,21 @@
   margin: 0;
 }
 
+body {
+  background-color: rgb(139, 142, 0);
+}
+
+.App {
+  margin-top: 0.5em;
+}
+
 .image-div {
-  width: 50%;
+  width: max(50%, 350px);
   margin: auto;
-  background-color: rgb(161, 161, 161);
+  margin-bottom: 3em;
   text-align: center;
+  padding: 1em;
+  box-shadow: -5px 5px 15px black;
 }
 
 .image-div img {
@@ -18,4 +28,75 @@
 
 .image-div h2 {
   font-size: max(1.3em, 1.3vw);
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socials img {
+  width: 3em;
+}
+
+#slack,
+#twitter {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.2em;
+}
+
+#slack {
+display: none;
+}
+
+.links {
+  text-align: center;
+  margin: auto;
+  margin-block: 1em;
+}
+
+.links a {
+  background-color: rgb(8, 8, 8);
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  font-size: max(0.9em, 1.2vw);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.3s;
+  margin: auto;
+}
+
+.links a:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2em;
+  width: 90%;
+  margin: auto;
+  margin-block: 5em;
+  box-shadow: 0px 5px 10px black;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #zuri__logo {
+    margin-bottom: 1em;
+  }
+
+  #I4G__logo {
+    margin-top: 1em;
+  }
 }
