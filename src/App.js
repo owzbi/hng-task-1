@@ -17,7 +17,6 @@ function App() {
        <a id="twitter" href="https://twitter.com/owzbi" target={"_blank"}>
           <img src={twitter}
            alt="twitter logo" />
-           owzbi
         </a>
         <a id="slack" href="https://slack.com/owzbi" target={"_blank"}> <img src={slack}
            alt="twitter logo" /></a>
