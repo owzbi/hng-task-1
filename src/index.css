@@ -34,7 +34,7 @@ body {
 
 .image-div h2 {
   font-size: max(1em, 1vw);
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
 #socials {
@@ -125,7 +125,7 @@ form {
 }
 
 .form-container p {
-  font-size: max(1.2vw, .8em);
+  font-size: max(1.2vw, 0.8em);
   font-weight: 400;
   text-align: left;
   color: #101828;
@@ -184,13 +184,13 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
   color: #667085;
-  font-size: max(1.2vw, .92em);
+  font-size: max(1.2vw, 0.92em);
 }
 
 .text-input label {
   padding: 0;
   margin-block: 0.7em;
-  font-size: max(1.2vw, .9em);
+  font-size: max(1.2vw, 0.9em);
   color: #344054;
   font-weight: 500;
   margin-top: 2em;
@@ -214,6 +214,12 @@ textarea::placeholder {
   font-weight: 400;
   font-size: max(0.8vw, 0.8em);
   color: #475467;
+}
+
+p.error {
+  color: rgb(226, 73, 73);
+  padding: .5em;
+  font-size: max(1vw, .8em);
 }
 
 #btn__submit {
