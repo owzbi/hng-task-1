@@ -16,7 +16,8 @@ body {
 }
 
 .image-div {
-  width: max(50%, 350px);
+  width: max(50%, 100vw);
+  max-width: 700px;
   margin: auto;
   margin-bottom: 3em;
   text-align: center;
@@ -96,7 +97,8 @@ footer {
 .form-container {
   text-align: center;
   margin: auto;
-  width: max(50%, 375px);
+  width: max(50%, 100vw);
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +117,7 @@ form {
 }
 
 .form-container h3 {
-  font-size: max(1.3vw, 1.3em);
+  font-size: max(1.5vw, 1.5em);
   font-weight: 600;
   text-align: left;
   color: #101828;
@@ -123,7 +125,7 @@ form {
 }
 
 .form-container p {
-  font-size: max(0.7vw, 0.7em);
+  font-size: max(1.2vw, .8em);
   font-weight: 400;
   text-align: left;
   color: #101828;
@@ -182,13 +184,13 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
   color: #667085;
-  font-size: max(0.7vw, 0.8em);
+  font-size: max(1.2vw, .92em);
 }
 
 .text-input label {
   padding: 0;
   margin-block: 0.7em;
-  font-size: max(0.7vw, 0.7em);
+  font-size: max(1.2vw, .9em);
   color: #344054;
   font-weight: 500;
   margin-top: 2em;
@@ -226,7 +228,10 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+  .names-input {
+    flex-direction: column;
+  }
   footer {
     flex-direction: column;
     justify-content: space-between;
