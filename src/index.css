@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,7 +7,8 @@
 }
 
 body {
-  background-color: rgb(139, 142, 0);
+  background-color: #f7f6f6;
+  font-family: "Inter", sans-serif;
 }
 
 .App {
@@ -18,16 +21,19 @@ body {
   margin-bottom: 3em;
   text-align: center;
   padding: 1em;
-  box-shadow: -5px 5px 15px black;
+  box-shadow: -5px 5px 15px rgb(226, 225, 225);
 }
 
-.image-div img {
-  width: 5em;
+#profile__img {
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
   display: inline-block;
 }
 
 .image-div h2 {
-  font-size: max(1.3em, 1.3vw);
+  font-size: max(1em, 1vw);
+  margin-top: .8em;
 }
 
 #socials {
@@ -48,7 +54,7 @@ body {
 }
 
 #slack {
-display: none;
+  display: none;
 }
 
 .links {
@@ -58,31 +64,166 @@ display: none;
 }
 
 .links a {
-  background-color: rgb(8, 8, 8);
+  background-color: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
   display: inline-block;
   padding: 1em;
   width: 100%;
-  max-width: 300px;
   font-size: max(0.9em, 1.2vw);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: max(1vw, 0.9em);
   text-decoration: none;
   transition: 0.3s;
   margin: auto;
 }
 
 .links a:hover {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(243, 242, 242);
 }
 
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 1.2em;
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-block: 5em;
-  box-shadow: 0px 5px 10px black;
+  box-shadow: -5px 5px 15px rgb(203, 203, 203);
+}
+
+.form-container {
+  text-align: center;
+  margin: auto;
+  width: max(50%, 375px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0px 96px;
+  gap: 64px;
+  box-shadow: -5px 5px 15px rgb(226, 225, 225);
+}
+
+#heading {
+  width: 90%;
+}
+
+form {
+  width: 90%;
+}
+
+.form-container h3 {
+  font-size: max(1.3vw, 1.3em);
+  font-weight: 600;
+  text-align: left;
+  color: #101828;
+  width: 100%;
+}
+
+.form-container p {
+  font-size: max(0.7vw, 0.7em);
+  font-weight: 400;
+  text-align: left;
+  color: #101828;
+  margin-top: 1.3em;
+}
+
+.names-input {
+  display: flex;
+  justify-content: center;
+  grid-column-gap: 1em;
+  margin-top: -2em;
+}
+
+.names-input .text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  width: 100%;
+}
+
+.email-msg {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input label,
+.text-input input,
+.text-input textarea {
+  display: block;
+  resize: none;
+  text-align: left;
+  width: 100%;
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  /* color: #d0d5dd; */
+}
+
+input,
+textarea {
+  border: 1px solid #d0d5dd;
+  color: #667085;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #aaaeb5;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #667085;
+  font-size: max(0.7vw, 0.8em);
+}
+
+.text-input label {
+  padding: 0;
+  margin-block: 0.7em;
+  font-size: max(0.7vw, 0.7em);
+  color: #344054;
+  font-weight: 500;
+  margin-top: 2em;
+}
+
+.agree {
+  text-align: left;
+  margin-block: 2em;
+  display: flex;
+}
+
+.agree input {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  display: block;
+}
+
+.agree label {
+  display: block;
+  margin-left: 0.8em;
+  font-weight: 400;
+  font-size: max(0.8vw, 0.8em);
+  color: #475467;
+}
+
+#btn__submit {
+  width: 100%;
+  padding: 12px 20px;
+  background: #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  border: 1px solid #1570ef;
+  font-size: 16px;
+  color: #ffff;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
